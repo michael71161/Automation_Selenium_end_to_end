@@ -51,4 +51,5 @@ time.sleep(3)
 successMsg= driver.find_element(By.CSS_SELECTOR,".alert.alert-success.alert-dismissible").text #grab the message 
 #now parcially assert instead of entire text part of it
 assert "Success! Thank you!" in successMsg , "there is problem with porchuse confirm"
-        
+
+driver.close()
